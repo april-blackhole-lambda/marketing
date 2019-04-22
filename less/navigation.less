@@ -1,0 +1,40 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+  background-color: #1c2431;
+
+
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    flex: 1;
+
+    @media @phone {
+      margin-bottom: 1em;;
+    }
+  }
+
+  button {
+    width: 15em;
+    height: 5em;
+    background-color: #65e2d9;
+    // background-image: linear-gradient(to right, #65e2d9, #339ecc);
+    border-radius: 30px;
+    font-size: 1em;
+
+    @media @phone {
+      margin-left: 0;
+    }
+
+    a {
+      font-size: 1.5em;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

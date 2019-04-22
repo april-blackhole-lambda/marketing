@@ -131,10 +131,12 @@ table {
 }
 html {
   font-size: 62.5%;
+  background: #181f2a;
 }
 html,
 body {
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 h1,
 h2,
@@ -157,4 +159,42 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+  background-color: #1c2431;
+}
+@media (max-width: 500px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-nav img {
+  flex: 1;
+}
+@media (max-width: 500px) {
+  .main-nav img {
+    margin-bottom: 1em;
+  }
+}
+.main-nav button {
+  width: 15em;
+  height: 5em;
+  background-color: #65e2d9;
+  border-radius: 30px;
+  font-size: 1em;
+}
+@media (max-width: 500px) {
+  .main-nav button {
+    margin-left: 0;
+  }
+}
+.main-nav button a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
 }
