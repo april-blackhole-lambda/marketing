@@ -198,3 +198,33 @@ p {
   color: white;
   text-decoration: none;
 }
+footer {
+  display: flex;
+  width: 100%;
+  padding: 4em 4em 0 4em;
+  font-size: 1.5em;
+  justify-content: space-around;
+  background-color: #0b1523;
+  align-items: center;
+}
+footer .icon-text {
+  max-width: 40em;
+}
+footer .icon-text p {
+  font-size: 0.85em;
+  margin: 1em 0;
+}
+footer .footer-menu {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  line-height: 2em;
+}
+footer .footer-bottom {
+  align-items: center;
+  width: 100%;
+  margin: 10em 0 1em;
+  font-size: 1em;
+}
