@@ -200,31 +200,29 @@ p {
 }
 footer {
   display: flex;
-  width: 100%;
   padding: 4em 4em 0 4em;
   font-size: 1.5em;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #0b1523;
   align-items: center;
 }
 footer .icon-text {
-  max-width: 40em;
+  width: 20em;
 }
 footer .icon-text p {
   font-size: 0.85em;
   margin: 1em 0;
 }
 footer .footer-menu {
-  width: 40%;
+  width: 60em;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 0.9em;
   line-height: 2em;
 }
-footer .footer-bottom {
+.footer-bottom {
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 10em 0 1em;
+  padding: 0 0 1em 36em;
   font-size: 1em;
 }
