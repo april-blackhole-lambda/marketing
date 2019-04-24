@@ -15,11 +15,16 @@
     margin: auto;
     text-align: center;
 
-    h1 {
+    @media @phone {
+      img {
+        width: 100%
+      }
+    }
 
+    h1 {
       line-height: 1.5em;
       margin-bottom: 1.5em;
-      font-size: 2em;
+      font-size: 3em;
       opacity: 0.8;
     }
 
@@ -27,7 +32,7 @@
       width: 15em;
       height: 5em;
       background-color: #65e2d9;
-      background-image: linear-gradient(to right, #65e2d9, #339ecc);
+      // background-image: linear-gradient(to right, #65e2d9, #339ecc);
       border-radius: 30px;
       font-size: 1em;
 
@@ -90,6 +95,15 @@
   width: 100%;
   justify-content: space-between;
 
+  .message-image {
+    flex-basis: 50%;
+
+    img {
+      width: 100%;
+      max-width: 615px;
+    }
+  }
+
   .message-wrapper {
     flex-basis: 40%;
     display: flex;
@@ -97,12 +111,8 @@
     justify-content: center;
     flex-basis: 50%;
 
-    img {
-      width: 100%;
-      max-width: 615px;
-    }
-
     h1 {
+      font-size: 3em;
       margin-bottom: 0.5em;
       width: 100%;
       max-width: 340px;
@@ -170,6 +180,7 @@
 
   h1 {
     margin-bottom: 2vh;
+    font-size: 3em;
   }
 
   input {
