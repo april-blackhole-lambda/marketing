@@ -226,3 +226,30 @@ footer .footer-menu {
   padding: 0 0 1em 36em;
   font-size: 1em;
 }
+.hero-home {
+  background-color: #1c2431;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-position: bottom;
+}
+@media (max-width: 500px) {
+  .hero-home {
+    background-image: url("../images/bg-curvy-mobile.svg");
+  }
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 680px;
+  margin: auto;
+  text-align: center;
+}
+.hero-wrapper h1 {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  opacity: 0.8;
+}
