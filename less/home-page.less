@@ -1,0 +1,51 @@
+// Intro
+.hero-home {
+  background-color: #1c2431;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-position: bottom;
+
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 680px;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+
+      line-height: 1.5em;
+      margin-bottom: 1.5em;
+      font-size: 2em;
+      opacity: 0.8;
+    }
+
+    button {
+      width: 15em;
+      height: 5em;
+      background-color: #65e2d9;
+      // background-image: linear-gradient(to right, #65e2d9, #339ecc);
+      border-radius: 30px;
+      font-size: 1em;
+
+      @media @phone {
+        margin-left: 0;
+      }
+
+      a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media @phone {
+  .hero-home {
+    background-image: url("../images/bg-curvy-mobile.svg");
+  }
+}
