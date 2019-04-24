@@ -340,6 +340,14 @@ footer .footer-menu a {
 }
 .message-home .message-wrapper a {
   text-decoration: none;
+  margin-top: 2vh;
+  font-size: 2em;
+  width: 7vw;
+}
+.message-home .message-wrapper a .link-decor {
+  color: magenta;
+  text-decoration: none;
+  padding-bottom: 3px;
 }
 @media (max-width: 500px) {
   .message-home {
