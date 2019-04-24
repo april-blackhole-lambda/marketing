@@ -27,7 +27,7 @@
       width: 15em;
       height: 5em;
       background-color: #65e2d9;
-      // background-image: linear-gradient(to right, #65e2d9, #339ecc);
+      background-image: linear-gradient(to right, #65e2d9, #339ecc);
       border-radius: 30px;
       font-size: 1em;
 
@@ -121,5 +121,77 @@
 @media @phone {
   .message-home {
     flex-direction: column;
+  }
+}
+
+// CTA
+.cta-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10em 3em;
+  background: linear-gradient(to bottom, #181f2a 0%, #181f2a 50%, #0b1523 50%, #0b1523 100%);
+
+  .cta-wrapper {
+    background-color: #1c2431;
+    padding: 5em 3em;
+    width: 100%;
+    max-width: 860px;
+    box-shadow: 0px 10px 20px 15px rgba(0, 0, 0, 0.1);
+
+    p {
+      width: 100%;
+      max-width: 620px;
+      opacity: 0.8;
+      margin: 0 auto 2em;
+    }
+
+    button {
+      width: 15em;
+      height: 5em;
+      background-color: #65e2d9;
+      background-image: linear-gradient(to right, #65e2d9, #339ecc);
+      border-radius: 30px;
+      font-size: 1em;
+
+      @media @phone {
+        margin-left: 0;
+      }
+
+      a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 2vh;
+  }
+
+  input {
+    width: 100%;
+    min-width: 200px;
+    max-width: 480px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+
+  .get-started {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media @phone {
+   .get-started {
+    width: 100%;
+    max-width: 480px;
+    margin-right: 2em;
   }
 }
