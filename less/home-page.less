@@ -49,3 +49,36 @@
     background-image: url("../images/bg-curvy-mobile.svg");
   }
 }
+
+// Features
+.features-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  margin: 10em auto;
+
+  .feature-wrapper {
+    flex-basis: 45%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+
+    p {
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media @phone {
+  .features-home {
+    flex-direction: column;
+  }
+}
