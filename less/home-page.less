@@ -82,3 +82,44 @@
     flex-direction: column;
   }
 }
+
+// Message
+.message-home {
+  display: flex;
+  padding: 0 8vw 7vh;
+  width: 100%;
+  justify-content: space-between;
+
+  .message-wrapper {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+
+    img {
+      width: 100%;
+      max-width: 615px;
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+      width: 100%;
+      max-width: 340px;
+    }
+
+    p {
+      opacity: 0.8;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media @phone {
+  .message-home {
+    flex-direction: column;
+  }
+}
