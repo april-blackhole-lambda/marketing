@@ -1,62 +1,41 @@
-// footer {
-//   background-color: #0b1523;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 4em 4em 0 4em;
-//   font-size: 1.5em;
-//
-//   .footer-message .icon-text {
-//     justify-content: flex-start;
-//     flex-direction: column;
-//   }
-//
-//   .footer-menu {
-//     margin-bottom: 3em;
-//   }
-//
-//   .footer-bottom {
-//     font-size: 1em;
-//   }
-// }
-
-/////////
-
 footer {
 display: flex;
 padding: 4em 4em 0 4em;
 font-size: 1.5em;
-justify-content: space-between;
+justify-content: space-around;
 background-color: #0b1523;
 align-items: center;
 
-  .icon-text {
-    width: 20em;
+  .footer-menu {
+    font-size: 1.25em;
+    line-height: 2em;
 
-    p {
-      font-size:0.85em;
-      margin:1em 0;
+    a {
+      text-decoration: none;
+      color: white;
+      opacity: .8;
+    }
+
+    @media @phone {
+      margin-top: 1em;
     }
   }
 
-  .footer-menu {
-    width: 60em;
-    display: flex;
+  @media @phone {
+    flex-direction: column;
     align-items: center;
-    font-size: 0.9em;
-    line-height: 2em;
   }
-
-  // .footer-bottom {
-  //   align-items: center;
-  //   margin-bottom: 1em;
-  //   font-size: 1em;
-  // }
 }
 
-.footer-bottom {
+.footer-copyright {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0 0 1em 36em;
-  font-size: 1em;
+
+  .footer-bottom p {
+    font-size: 1em;
+
+    @media @phone {
+      font-size: .5em;
+    }
+  }
 }
