@@ -417,3 +417,68 @@ footer .footer-menu a {
     margin-right: 2em;
   }
 }
+.hero-about {
+  background-color: #1c2431;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-position: bottom;
+}
+.hero-about .about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 680px;
+  margin: auto;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .hero-about .about-wrapper img {
+    width: 100%;
+  }
+}
+.hero-about .about-wrapper h1 {
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  font-size: 6em;
+  opacity: 0.8;
+}
+@media (max-width: 500px) {
+  .hero-about {
+    background-image: url("../images/bg-curvy-mobile.svg");
+  }
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 2em auto;
+}
+.team .team-wrapper {
+  flex-basis: 45%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+.team .team-wrapper p {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  opacity: 0.8;
+}
+.team .team-wrapper a {
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 500px) {
+  .features-home {
+    flex-direction: column;
+  }
+}
